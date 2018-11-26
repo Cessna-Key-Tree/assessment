@@ -22,6 +22,9 @@
         if (userName.length === 0) {
             // ガード句の前に追加　空欄でボタン押したとき、前回の結果を消す
             removeAllChildren(resultDivided);
+            // tweet欄も（ツイートボタンを押すと前回の結果が残ってしまっていた）
+            removeAllChildren(tweetDivided);
+           
             // 名前が空のときは処理を終了する　ガード句
             return;
         }
