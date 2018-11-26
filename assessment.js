@@ -24,7 +24,6 @@
             removeAllChildren(resultDivided);
             // tweet欄も（ツイートボタンを押すと前回の結果が残ってしまっていた）
             removeAllChildren(tweetDivided);
-           
             // 名前が空のときは処理を終了する　ガード句
             return;
         }
